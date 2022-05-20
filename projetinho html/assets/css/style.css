@@ -1,0 +1,117 @@
+h1 {
+    margin: 0%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    text-align: center;
+    color: rgb(119, 106, 216);
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+    
+}
+
+.tituloContato{
+    color:black;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(175, 169, 218);
+
+}
+
+.center{
+    text-align: center;
+    display: flex;
+    margin-right:  50px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row ;
+    justify-content:center ;
+    align-items: center;
+}
+
+.text{
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 50px;
+    
+}
+
+#menu li{
+    display: inline;
+    padding: 30px;
+    text-decoration: none;
+}
+
+#menu li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color:grey;
+}
+
+.tituloVideo {
+
+    flex-flow: row wrap;
+    text-align:center;
+    color: #6c5ce7;
+}
+.video{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    margin-bottom: 70px;
+}
+
+.img{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img{
+    width: 600px;
+    height: 300px;
+    margin-right: 1px;    
+}
+
+.rodape{
+    
+    text-align: center;
+}
+
+.tamanhoIcones{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    
+}
+
+.icol{
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+.endereco{
+    margin-left: 80px;
+
+}
+
+.form{
+    margin-right: 50px;
+}
+
+
+
+
+
