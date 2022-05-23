@@ -30,48 +30,58 @@
         <div class="form">
             <form>
                 <label class="espacoformN" for="nome">Nome:</label>
-                <input class="espacoform" type="text" id="nome">
+                <input class="espacoform" type="text" id="nome" onkeyup="validaNome()" value="">
+                <div id="txtNome"></div>
+                
                 <label class="espacoformN" for="email">E-mail:</label>
-                <input class="espacoform" type="text" id="email">
+                <input class="espacoform" type="text" id="email" onkeyup="validaEmail()" value="">
+                <div id="txtEmail"></div>
+                
                 <label class="espacoformN" for="assunto">Assunto:</label>
-                <textarea class="espacoform" name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea class="espacoform" name="assunto" id="assunto" onkeyup="validaAssunto()" value="" cols="60" rows="5"></textarea>
+                <div id="txtAssunto"></div>
                 
+                           
                 
-                <button class="button"><span>Enviar</span></button>                
+                <button class="button" onclick="enviar()" value="Enviar"><span>Enviar</span></button>         
+                     
             </form>
         </div>
 
         <div class="endereco">
-            <h2>Endereço:</h2>
-            <p>Av Paulista, 100</p>
-            <p>São Paulo - SP</p>
+            <address>
+                <h2>Endereço:</h2>
+                <p>Av Paulista, 100</p>
+                <p>São Paulo - SP</p>
+            </address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.930388592643!2d-46.64623268554272!3d-23.57094346783014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd92bce431%3A0xc37ded133806ef0b!2sAv.%20Paulista%2C%20100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e0!3m2!1spt-BR!2sbr!4v1652978773115!5m2!1spt-BR!2sbr" 
             width="400" 
             height="250" 
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa">
+            
         </iframe>
         </div>
 
     </div>
 
-        
-    
+    <hr>
+    <footer>
+        <div class="icol">
+            <a href="https://www.linkedin.com/in/marjory-matos/" target="_blank">
+              <img class="tamanhoIcones" src="assets/icones/linkedin.png" alt="Linkedin">
+            </a>  
+      
+            <a href="https://github.com/MarjoryMatos" target="_blank">
+              <img class="tamanhoIcones" src="assets/icones/github.png" alt="github">
+            </a>
+          </div>
+      
+         <p class = "rodape"> Todos os direitos reservados: Marjory Matos 2022 &copy; </p>
+        </footer>
+         
+        <script src="assets/js/script.js"></script>
 </body>
-<hr>
-<footer>
-    <div class="icol">
-        <a href="https://www.linkedin.com/in/marjory-matos/" target="_blank">
-          <img class="tamanhoIcones" src="assets/icones/linkedin.png" alt="Linkedin">
-        </a>  
-  
-        <a href="https://github.com/MarjoryMatos" target="_blank">
-          <img class="tamanhoIcones" src="assets/icones/github.png" alt="github">
-        </a>
-      </div>
-  
-     <p class = "rodape"> Todos os direitos reservados: Marjory Matos 2022 &copy; </p>
-    </footer>
 </html>
